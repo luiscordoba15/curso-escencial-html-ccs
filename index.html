@@ -1,110 +1,204 @@
 <!DOCTYPE html>
-<html lang="es ">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Blog de Luis</title>
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <p>Setup</p>
-        <nav>
-        <ol>
-            <li>
-              Google Chrome
-            </li>
-            <li>
-              Visual Studio Code
-            </li>
-            <li>
-              Figma
-            </li>
-            <li>
-                Github
-            </li>
-            <ol>
-            <p> Conceptos esenciales del desarrollo web</p>
-            </ol>
-                <li>Que es HTML</li>
-                <li>Etiquetas</li>
-                <li>DOM</li>
-                <li>Semantica</li>
-                <li>Atributos</li>
-                <li>Que es CCS</li>
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>      
+                </nav>
+            </div>
+            <h1>Venta de Casas y Departamento Exclusivos de Lujo</h1>
+        </div> <!-- contenedor -->
+    </header>
+
+    <section class="contenedor seccion">
+        <h2 class="fw-300 centrar-texto">Más Sobre Nosotros</h2>
+        
+        <div class="iconos-nosotros">
+            <div class="icono">
+            <img src="img/icono1.svg" alt="Icono Seguridad">
+            <h3 class>Seguridad</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam consectetur eveniet voluptates ipsum deserunt, ducimus perferendis modi laudantium, officia odio. Excepturi quaerat sunt reiciendis consectetur nesciunt ratione aperiam optio.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono2.svg" alt="El Mejor Precio">
+                <h3 class>El Mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa, dolorum quasi laborum consequatur nobis harum deserunt excepturi eum, consequuntur rerum consectetur blanditiis? Necessitatibus natus vitae molestias commodi? Temporibus, maiores?</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono3.svg" alt="A Tiempo">
+                <h3 class>A Tiempo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit reprehenderit ut placeat eaque doloremque adipisci assumenda error ducimus quis enim consectetur, beatae molestias nisi voluptas. Porro molestias laudantium vitae optio!</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+
+        <div class="contenedor-anuncios">
+            <div class="anuncio">
+                <img src="img/anuncio1.jpg" alt="Anuncio Casa en el Lago">
+                <div class="contenido-anuncio">
+                    <h3>Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio.</p>
+                    <p class="precio">$3.000.000</p>
+
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="icono wc">
+                        <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="icono autos">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+                            <p>4</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="img/anuncio2.jpg" alt="Anuncio Casa Terminados de Lujo">
+                <div class="contenido-anuncio">
+                    <h3>Casa Terminados de Lujo</h3>
+                    <p>Casa con diseño moderno, así como tecnología inteligente y amueblado.</p>
+                    <p class="precio">$2.000.000</p>
+
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="icono autos">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+                            <p>4</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="img/anuncio3.jpg" alt="Anuncio Casa con  Alberca">
+                <div class="contenido-anuncio">
+                    <h3>Casa con Alberca</h3>
+                    <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad.</p>
+                    <p class="precio">$3.000.000</p>
+
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="icono autos">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+                            <p>4</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ver-todas">
+            <a href="anuncios.html" class=" boton boton-verde">Ver Todas</a>
+        </div>
+    </main>
+
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>Encuentra la casa de tus sueños</h2>
+            <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.</p>
+            <a href="contacto.html" class="boton boton-amarillo">Contáctanos</a>
+        </div>
+    </section>
+
+    <div class="seccion-inferior contenedor seccion">
+        <section class="blog">
+            <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
+            
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog1.jpg" alt="Entrada de blog">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Terraza en el techo de tu casa</h4>
+                    </a>
+                    <p>Escrito el: <span> 20/10/2019 </span> por: <span> Admin </span> </p>
+                    <p>Consejos para contruir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
+                </div>
+            </article>
+            
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog2.jpg" alt="Entrada de blog">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                    <h4>Guía para la decoración de tu hogar</h4>
+                    </a>
+                    <p>Escrito el: <span> 20/10/2019 </span> por: <span> Admin </span> </p>
+                    <p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
+                </div>
+            </article>
+        </section>
+        
+        <section class="testimoniales">
+            <h3 class="centrar-texto fw-300">Testimoniales</h3>
+            <div class="testimonial">
+                <blockquote>
+                    El personal se comportó de una excelente forma y la casa que me ofrecieron cumple con todas mis expectativas
+                </blockquote>
+                <p>-Camille Mejias</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-        </ol>
-    </nav>
-</header>
-<h1>Curso esencial de HTML Y CCS</h1>
-    <p>
-    Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
-    </p>
-<h2>
-    Setup
-</h2>
-    <img src="images/google-chrome-png.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
-<h3>Google Chrome</h3>
-    <p>
-    Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
-    </p>
-    <img src="images/visual-studio-code-png.png" alt="Logo del editor de Visual Studio Code" title="Logo del editor de Visual Studio Code">
-<h3>Visual Studio Code</h3>
-    <p>
-        Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.
-    </p>
-    <img src="images/figma-png.png" alt="Logo de Figma" title="Logo de Figma">
-<h3>Figma</h3>
-    <p>
-        Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.
-    </p>
-    <img src="images/github-png.png" alt="Logo de GitHub" title="Logo de GitHub">
-<h3>GitHub</h3>
-    <p>
-        Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.
-    </p>
-    <hr>
-<h3>Que es HTML</h3>
-    <p>
-        Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.
-    </p>
-<h3>Etiquetas</h3>
-    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
-    <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.</p>
-<h3>DOM</h3>
-    <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
-    <img src="images/dom.png" alt="Estructura del arbol que representa al Document Objet Model">
-<h3>Semántica</h3>
-    <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-<h3>Atributos</h3>
-    <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
-    <h3>CSS</h3>
-    <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
-    <img src="imageS/CSS.png" alt="Logo CSS">
-<h2>Modelo de Caja</h2>
-    <h3>El modelo de caja está compuesto por:</h3>
-    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-    <ul>
-        <li>1.Tamaño del del contenido / ancho y alto</li>
-        <li>2. Padding / Relleno</li>
-        <li>3. Border / Bordes</li>
-        <li>4. Margin / Márgenes</li>
-    </ul>    
-<h3>Propiedades físicas para el modelo de caja</h3>    
-    <ol>
-        <li>width / height</li>
-        <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-        <li>border / border-top | border-right | border-bottom | border-left</li>
-        <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>    
-    </ol>
-<h3>Propiedades lógicas para el modelo de caja:</h3>
-    <ul>
-        <li>inline-size / block-size</li>
-        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-    </ul>
-<h3>Modelo de Caja</h3>
-<img src="images/programar-cambio-mi-vida.png" alt="Programar Cambio mi vida, no te rindas"
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy;</p>
+        </div>
+        </footer>
 </body>
 </html>
