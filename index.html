@@ -4,92 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Viajes</title>
-    <script src="https://kit.fontawesome.com/c3f59492c9.js" crossorigin="anonymous"></script>
+    <title>Frontend Store</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="site-header contenedor">
-        <img src="img/logo.png" alt="logotipo">
+    <header>
+        <img src="img/logo.png" alt="Logotipo">
     </header>
-
-    <div class="barra">
-
-        <a href="#nav" class="mobile-menu">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-        </a>
-
-        <nav id="nav" class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Blog</a>
-            <a href="#">Tienda</a>
-            <a href="#">Contacto</a>
-
-            <a href="#" class="cerrar">
-                <i class="fa-solid fa-xmark"></i>
-            </a>
-
-        </nav>
-    </div>    
-
-    <div class="contenedor clearfix">
-        <main class="contenido-principal">
-            <article class="entrada">
-                <h2>Viajar a Londres</h2>
-                <img src="img/imagen_1.jpg" alt="Imagen Viaje a Londres">
-                <p>Mauris et eros nisi. Donec ornare, est vel fringilla luctus, est odio facilisis felis, id placerat orci turpis non ligula. Curabitur a velit et enim placerat porttitor. In ut diam lectus. Nunc nec ullamcorper ipsum, nec fringilla quam. Ut cursus at metus bibendum aliquam. Praesent sed elementum tortor.</p> 
-                <p>Maecenas condimentum mollis egestas. Donec mattis imperdiet dolor, nec finibus velit sollicitudin at. Praesent malesuada nunc quis ligula porttitor iaculis. Nulla at accumsan mi. Sed at augue sagittis, interdum ligula ut, varius nunc. Mauris facilisis laoreet sapien, eget imperdiet purus varius et. Ut accumsan sollicitudin risus vel lobortis. Pellentesque a tincidunt enim.</p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-            <article class="entrada">
-                <h2>Puente de la Torre</h2>
-                <img src="img/imagen_2.jpg" alt="Imagen Puente de la Torre">
-                <p>Mauris et eros nisi. Donec ornare, est vel fringilla luctus, est odio facilisis felis, id placerat orci turpis non ligula. Curabitur a velit et enim placerat porttitor. In ut diam lectus. Nunc nec ullamcorper ipsum, nec fringilla quam. Ut cursus at metus bibendum aliquam. Praesent sed elementum tortor.</p> 
-                <p>Maecenas condimentum mollis egestas. Donec mattis imperdiet dolor, nec finibus velit sollicitudin at. Praesent malesuada nunc quis ligula porttitor iaculis. Nulla at accumsan mi. Sed at augue sagittis, interdum ligula ut, varius nunc. Mauris facilisis laoreet sapien, eget imperdiet purus varius et. Ut accumsan sollicitudin risus vel lobortis. Pellentesque a tincidunt enim.</p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-            <article class="entrada">
-                <h2>Metro de Londres</h2>
-                <img src="img/imagen_3.jpg" alt="Imagen Metro de Londres">
-                <p>Mauris et eros nisi. Donec ornare, est vel fringilla luctus, est odio facilisis felis, id placerat orci turpis non ligula. Curabitur a velit et enim placerat porttitor. In ut diam lectus. Nunc nec ullamcorper ipsum, nec fringilla quam. Ut cursus at metus bibendum aliquam. Praesent sed elementum tortor.</p> 
-                <p>Maecenas condimentum mollis egestas. Donec mattis imperdiet dolor, nec finibus velit sollicitudin at. Praesent malesuada nunc quis ligula porttitor iaculis. Nulla at accumsan mi. Sed at augue sagittis, interdum ligula ut, varius nunc. Mauris facilisis laoreet sapien, eget imperdiet purus varius et. Ut accumsan sollicitudin risus vel lobortis. Pellentesque a tincidunt enim.</p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-        </main>
-
-        <aside class="sidebar">
-            <section class="Otras-Entradas">
-                <h2>Otros Posts</h2>
-                <ul>
-                    <li><a href="#">Entrada 1</a></li>
-                    <li><a href="#">Entrada 2</a></li>
-                    <li><a href="#">Entrada 3</a></li>
-                    <li><a href="#">Entrada 4</a></li>
-                </ul>
-            </section>
-        </aside>
-    </div><!--.contenedor-->
     
-    <footer class="footer-sitio">
-        <div class="contenedor clearfix">
-            <section class="nosotros">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl urna. Vivamus convallis enim vel nulla semper dignissim. Aliquam erat volutpat. Maecenas quis ante ac nisi convallis tristique.</p>
-            </section>
-            <section class="menu">
-                <h2>Menú de Navegación</h2>
-                <nav>
-                    <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Tienda</a>
-                    <a href="#">Contacto</a>
-                </nav>
-            </section>
+        <div class="contenedor">
+        <div class="hero">
+            <img src="img/hero.jpg" alt="imagen hero">
         </div>
-        <p class="copyright">Blog de viajes - Todos los Derechos Reservados 2019 &copy;</p> 
-    </footer>
+
+        <main>
+            <h2>Nuestros Productos</h2>
+            <ul class="lista-productos">
+                <li>
+                    <img src="img/1.jpg" alt="producto">
+                    <p>VueJS <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/2.jpg" alt="producto">
+                    <p>Angular <span>$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/3.jpg" alt="producto">
+                    <p>React <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/4.jpg" alt="producto">
+                    <p>Redux <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/5.jpg" alt="producto">
+                    <p>Node.js <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/6.jpg" alt="producto">
+                    <p>SASS <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                        <img src="img/7.jpg" alt="producto">
+                    <p>HTML5 <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/8.jpg" alt="producto">
+                    <p>Github <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/9.jpg" alt="producto">
+                    <p>Bulma CSS <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/10.jpg" alt="producto">
+                    <p>TypeScript <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/11.jpg" alt="producto">
+                    <p>Drupal <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/12.jpg" alt="producto">
+                    <p>Javascript <span class="precio">$25</span></p>
+                    <a href="#" class="boton">Comprar</a>
+                </li>
+            </ul>
+        </main>
+    </div><!--.contenedor-->
 </body>
 </html>
